@@ -1,0 +1,438 @@
+html,
+body {
+    height: 100%;
+    font-family: "Muli", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    background: #151515;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    font-weight: 400;
+    font-family: "Oswald", sans-serif;
+}
+
+h1 {
+    font-size: 70px;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+h4 {
+    font-size: 24px;
+}
+
+h5 {
+    font-size: 18px;
+}
+
+h6 {
+    font-size: 16px;
+}
+
+p {
+    font-size: 14px;
+    font-family: "Muli", sans-serif;
+    color: #a9a9a9;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 0 0 15px 0;
+}
+
+
+/*Button*/
+.primary-btn {
+    display: inline-block;
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    line-height: normal;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 17px 30px 16px;
+    background: #E11299;
+    text-decoration: none;
+}
+
+.primary-btn:hover{
+    background: #E11299;
+    border-color: #E11299;
+}
+
+.secondary-btn {
+    background: transparent;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #E11299;
+    border-image: initial;
+}
+
+.primary-btn.secondary-btn:hover {
+    background: #E11299;
+    border-color: #E11299;
+}
+
+.primary-btn .secondary-btn {
+    transition: all 0.3s ease 0s;
+}
+
+/*Fin Button*/
+
+/*Header*/
+.header-section {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 0 15px;
+    padding-top: 1rem;
+    z-index: 99;
+}
+
+.header-section a {
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: "Oswald", sans-serif;
+    position: relative;
+    transition: all 0.3s;
+
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;     
+}
+
+@media only screen and (max-width: 980px) {
+    .header-section {
+        background-color: #1f1f1fa7;
+    }
+}
+/*Fin Header*/
+
+/*Section title */
+.section-title {
+    text-align: center;
+    color: white;
+}
+
+.section-title span {
+    font-size: 16px;
+    color: #E11299;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.section-title h2 {
+    color: #ffffff;
+    font-size: 32px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 8px;
+}
+
+/* fin section title */
+
+
+/* Footer */
+.footer {
+    background: #000000;
+    color: white;
+}
+
+.links ul {
+    list-style-type: none;
+}
+
+.links li a {
+    color: white;
+    text-decoration: none;
+}
+
+.links li a:hover {
+    color: #E11299;
+}
+
+.copyright p {
+    border-top: 1px solid rgba(255, 255, 255, .1);
+}
+
+/*end Footer*/
+
+/*Card - actividad*/
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.cards_item {
+    display: flex;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.card_image {
+    max-height: 250px;
+    margin-top: -24px;
+}
+
+.card_image img {
+    width: 100%;
+    max-width: 800px;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card_image:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100px;
+    position: relative;
+    top: -100px;
+    background: linear-gradient(0deg, #091014 10%, rgba(0, 0, 0, 0) 100%);
+}
+
+.card {
+    background-color: #091014;
+    border-radius: 0.25rem;
+    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.card_content {
+    padding: 1rem;
+    z-index: 1;
+    display: block;
+}
+
+.card_title {
+    line-height: 72px;
+    margin-top: -50px;
+    text-shadow: black 1px 0 15px;
+    color: white;
+}
+
+/*Cabecera paginas*/
+.header-pages {
+    height: 500px;
+    padding-top: 230px;
+    background-image: url(../images/banner-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header-pages h2 {
+    font-size: 60px;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px black, 0 0 1em rgba(24, 24, 24, 0.299), 0 0 0.2em rgb(19, 19, 19);
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    background-position: center;
+}
+
+/* Horario table */
+.tbl {
+    width: 100%;
+    color: #ffffff;
+}
+
+.tbl-header {
+    background-color: #E11299;
+}
+
+.tbl-content {
+    height: 300px;
+    margin-top: 0px;
+    text-align: center;
+}
+
+th {
+    padding: 20px 15px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+td {
+    padding: 15px;
+    text-align: left;
+    vertical-align: middle;
+    font-weight: 300;
+    font-size: 14px;
+    border-bottom: solid 1px rgba(255, 255, 255, 0.1);
+    text-align: center;
+}
+
+/*Card Tienda**/
+.card-body {
+    background-color: white;
+}
+
+.card-img {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.card-body h2 {
+    font-size: 60px;
+    color: #E11299;
+    text-align: center;
+}
+
+.pricing-btn {
+    display: block;
+    background: #333333;
+    color: white;
+    font-size: 14px;
+    padding: 17px 30px 16px;
+    line-height: normal;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-decoration: none;
+    text-align: center;
+}
+
+.pricing-btn:hover {
+    background: #E11299;
+}
+
+/* Services Section*/
+
+.services-section {
+    background: #151515;
+}
+
+.ss-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.ss-text {
+    background: #252525;
+    padding: 30px 30px;
+    height: 330px;
+    position: relative;
+    z-index: 1;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.ss-text:hover {
+    background: #363636;
+}
+
+.ss-text:hover a {
+    color: #E11299;
+}
+
+.ss-text:hover:after {
+    background: #363636;
+}
+
+.ss-text:after {
+    position: absolute;
+    left: -15px;
+    top: 50%;
+    height: 20px;
+    width: 20px;
+    background: #252525;
+    content: "";
+    -webkit-transform: rotate(45deg) translateY(-10px);
+    -ms-transform: rotate(45deg) translateY(-10px);
+    transform: rotate(45deg) translateY(-10px);
+    z-index: -1;
+    -webkit-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+.ss-text.second-row:after {
+    left: auto;
+    right: 0;
+}
+
+.ss-text h4 {
+    font-size: 22px;
+    color: #ffffff;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.ss-text p {
+    margin-bottom: 11px;
+}
+
+.ss-text a {
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: 700;
+    text-transform: uppercase;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+
+/*Equipo*/
+
+.card-team {
+    text-align: center;
+    /* padding: 40px 30px 52px; */
+    border: 1px solid #464646;
+    position: relative;
+    background: #151515;
+
+}
+
+.card-img-team {
+    width: 60%;
+    border-radius: 50%;
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.card-team h3 {
+    color: white;
+}
+
+
+.card-team:hover {
+    background: #ffffff;
+    border-color: #ffffff;
+    transform: scale3d(1.2, 1.2, 0.3);
+    -webkit-transform: scale3d(1.2, 1.2, 0.3);
+    -moz-transform: scale3d(1.2, 1.2, 0.3);
+}
+
+.card-team:hover h3 {
+    color: #111111;
+}
+
+.card-team .primary-btn {
+    background: #E11299;
+}
